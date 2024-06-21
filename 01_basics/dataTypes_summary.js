@@ -24,3 +24,27 @@ const myFunc = function(){
 }
 
 console.log(typeof heros);
+
+
+//-------------------------------------
+
+//Memory 
+/* Stack (Primitive) , Heap(non-primitive)*/
+
+let mynane = "jatinbansal"
+let anothername = mynane
+anothername = "chaiPeelo"
+console.log(mynane);
+console.log(anothername);
+
+let user1= {
+    email: "user@gmail.com",
+    upi: "@axis"
+}
+
+let user2 = user1
+
+user2.email = "user2@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);
