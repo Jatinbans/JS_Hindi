@@ -1,0 +1,26 @@
+// 2 types - primitive and non- primitive
+//primitive -  call by value
+// 7 types : String, Number, Boolean, null, undefined , symbol , BigInt
+
+
+// dynamically typed language - js 
+//non-primitive - refernece types
+//arrays, objects, functions // return type - object 
+
+
+const id = Symbol('123')
+const id1 = Symbol('123')
+console.log(id === id1);
+
+const heros = ["shaktimn","nagraaj","doga"] // array
+let myObj = {
+    name: "jatin", // object
+    age: 55
+}
+
+
+const myFunc = function(){
+    console.log("hello");
+}
+
+console.log(typeof heros);
