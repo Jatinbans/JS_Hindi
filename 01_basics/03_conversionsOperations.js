@@ -27,3 +27,36 @@
 // let stringNumber = String(someNumber)
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
+
+
+//------------------operations------------------------------
+
+// let value = 3
+// let negvalue = -value
+// console.log(negvalue);
+
+// let str1 = "hello"
+// let str2 = " jatin"
+// let str3 = str1+str2
+// console.log(str3);
+
+// ecma script  
+// console.log("1" + 2);  // 12
+// console.log(1 + "2"); //12 
+// console.log("1" + 2 + 2); //122
+// console.log(1 + 2 + "2"); // 32 
+
+
+// console.log(+true); // 1
+// console.log(true+) // error
+
+// console.log(+"") // 0
+
+
+//mdn website 
+let gameCounter = 100
+// gameCounter++;
+++gameCounter;
+console.log(gameCounter);
+
+//tc39.es/ecma262... link
