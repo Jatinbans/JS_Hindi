@@ -1,4 +1,4 @@
-// const myobject = {
+// const myobject = {  
 //     js:'javascript',
 //     cpp: 'c++',
 //     rb: 'ruby',
@@ -19,5 +19,5 @@
 
 const programming = ["js","py","java","cpp"]
 for (const key in programming) {
-   console.log(key);
+   console.log(programming[key]);
 }

@@ -1,6 +1,9 @@
 //array specific loops
 // for of loop 
 
+// ["","",""]
+//[{},{},{}]
+
 
 // const arr = [1,2,3,4,5]
 // for (const i of arr) {
@@ -14,7 +17,7 @@
 // }
 
 
-// Maps ik object hai
+// Maps ik object hai   maps are not Iteratable
 // const map = new Map()
 // map.set('IN',"India")
 // map.set('US',"United State of America")
@@ -36,3 +39,5 @@
 // for (const [key, value] of myObj) {
 //     console.log(key, ':-', value);
 // }
+
+
