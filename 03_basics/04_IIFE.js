@@ -14,3 +14,4 @@ variable hai ya jo declaration hai ohnu httane ke liye we use IIFE*/
 ( (name) => {
     console.log(`DB Connected two ${name}`);
 })("jatin")
+
