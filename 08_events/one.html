@@ -5,7 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html events</title>
 </head>
-<body>
-    
+<body style="background-color: #414141; color:aliceblue">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width = "200px" id="home" src = "https://assets.architecturaldigest.in/photos/60083e76274aca243711c3a4/16:9/w_2560%2Cc_limit/ghaziabad-uttar-pradesh-homes-photos-1366x768.jpg" alt="home"></li>
+            <li><img width = "200px" id="japan" src = "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202404/japan-in-spring-is-pure-magic-photo-getty-images-190518546-16x9_0.jpg?VersionId=TbrAOOxfNvb5ufPQhlUy5Dd4aJjr7L5M&size=690:388" alt=""></li>
+            <li><img width = "200px" id="river" src = "https://img.traveltriangle.com/blog/wp-content/uploads/2018/11/Rivers-of-the-World-Cover.jpg" alt=""></li>
+            <li> <a style= "color:aliceblue; "href ="https://google.com" id="google">Google</a></li>
+
+        </ul>
+    </div>
 </body>
+<script>
+    // document.getElementById('japan').onclick = function(){
+    //     alert("japan clicked")
+    // } not good approach
+
+    // document.getElementById('japan').addEventListener('click', function(){
+    //     alert("japan clicked")
+    // })  best approach
+
+    //types of events , timestamp, defaultPrevented, 
+    // target , toElement, srcElement, currentTarget
+    // clientX, y, screenX,Y
+    //altkey, ctrlkey, shiftkey, keycode
+
+    // document.getElementById('japan').addEventListener('click',function(e){
+    //     console.log(e);
+    // },false)
+    
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+    // },false)
+
+    // document.getElementById('japan').addEventListener('click',function(e){
+    //     console.log("japan clicked");
+    //     e.stopPropagation()
+    // },false)
+
+    // false means bubbling and true means capturing
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log("google clicked");
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    // },false)
+
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        e.stopPropagation()
+        console.log(e.target.parentNode);
+        let removeit = e.target.parentNode
+        removeit.remove()
+      
+    })
+  // removeit.parentNode.removeChild(removeit)
+</script>
 </html>
